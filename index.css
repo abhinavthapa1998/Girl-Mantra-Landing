@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.woman{
+    position: relative;
+    top: 40px;
+    left: 3vw;
+    height: 300px;
+    width: 500px;
+    z-index: 1;
+}
+.hero-div{
+    display: flex;
+    height: 20vh;
+    width: 25vw;
+    padding: 60px 35px 60px 35px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130deg, #fcf09fec, #fce6fdee);
+    border-radius: 20px;
+    z-index: 2;
+    
+}
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.hero-heading-variant{
+    background: #F8CDAA;
+    background: linear-gradient(130deg, #F8CDAA 0%, #DB36A4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 100px;
+    padding: 68px 0 20px 0;
+    
+}
+.card-container{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 0em;
+    width: 430px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 7px 0 #dddcdc;
+    transition: 0.3s ease all;
+}
+.imageContainer{
+    width: inherit;
+    height: 347px;
+}
+
+.image{
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+    border-radius: 20px 20px 0 0;
+}
+.detailHeader{
+    height: 127px;
+    display: block;
+    padding: 20px 28px 20px 28px;
+    border-bottom: 1px solid #e9e9e9;
+
+
+}
+.challengeHead{
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+}
+.challengeTime{
+    text-align: left;
+    font-weight: 600;
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    color: #5f5c5c;
+}
+.detailFooter{
+    display: flex;
+    padding: 10px 28px 0 28px;
+    flex-direction: column;
+    height: 75px;
+   
+}
+.uprow{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    justify-content: space-between;
+
+}
+.botrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.entry{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #555555;
+}
+.kickOff{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #555555;
+}
+
+.fee{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+} 
+.soon{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: black
+}
+
+.linehover{
+    height: 6px;
+    width: 0%;
+    background-color: #FDDB2F;
+    opacity: 1;
+    transition: 0.4s ease all;
+}
+
+.card-container:hover{
+    position: relative;
+    transform: translateY(-5px);
+}
+
+.card-container:hover .linehover{ width: 100%;}
+
+@media only screen and (max-width:991px) {
+    .card-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+    .card-container{
+        height: 500px;
+        width: 40vw;
+        
+
+    }
+
+    
+    .hero-heading .hero-heading-variant{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .card-container{
+        width: 65vw;
+        height: 130vw;
+    }
+    .imageContainer{
+        height: 278px;
+    }
+    .image{
+        height: inherit;
+    }
+    .detailHeader{
+        height: 100px;
+        padding: 20px 0 0 20px;
+
+    }
+    .challengeHead{
+        font-size: 20px;
+        
+    }
+    .challengeTime{
+        font-size: 12px;
+    }
+    .entry , .kickOff{
+        font-size: 10px;
+
+    }
+    .fee, .soon{
+        font-size: 10px;
+    }
+
+    .detailFooter{
+        height: 50px;
+        padding: 10px 0 0 20px;
+    }
+    
+}
