@@ -32,6 +32,16 @@
     font-family: 600;
     font-size: calc(10px + 1vw);
 }
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu-item{
+    font-family: "Helvetica", sans-serif;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    align-self: center;
+}
 .hero{
     display: flex;
     width: 100%;
