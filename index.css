@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    user-select: none;
 }
 .navbar{
     position: fixed;
@@ -220,6 +220,12 @@
 .card-container:hover .linehover{ width: 100%;}
 
 @media only screen and (min-width:768px) and (max-width:991px) {
+    .girlmantra{
+        font-size: 2.7vw;
+    }
+    .menu-item{
+        font-size: 2.7vw;
+    }
     .hero-div{
         width: 70%;
     }
@@ -266,6 +272,9 @@
     }
     .menu{
         margin-left: 0;
+    }
+    .menu-item{
+        font-size: 3.5vw;
     }
     .emoji img{
         height: 30px;
