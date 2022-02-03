@@ -4,8 +4,9 @@
 <img src="./GIFs/Desktop.gif"/>
 <img src="./GIFs/Mobile.gif"/>
 
-
 ## To view this project -
 ### 1. Download `all` files.
 ### 2. Put them in a `single folder`.
 ### 3. Run `index.html`
+
+## Source: https://girlmantra.com Check them out!
