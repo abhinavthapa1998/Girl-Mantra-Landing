@@ -27,10 +27,10 @@
 }
 .girlmantra{
     padding-left: 1vw;
-    padding-bottom: 1.5vw;
+    
     font-family: "Pacifico", cursive;
     font-family: 600;
-    font-size: calc(10px + 1vw);
+    font-size: calc(8px + 1vw);
 }
 .menu{
     display: flex;
@@ -255,6 +255,15 @@
 }
 
 @media only screen and (max-width: 767px){
+    .navbar{
+        width: 95%;
+        margin-left: 3vw;
+        margin-right: 3vw;    
+    }
+    .emoji img{
+        height: 25px;
+        width: 25px;
+    }
     .hero-div{
         height: 15vh;
         width: 70%;
