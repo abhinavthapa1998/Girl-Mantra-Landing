@@ -22,11 +22,15 @@
 .emoji img{
     height: 40px;
     width: 40px;
+    padding-left: 1vw;
+    padding-top: 3px;
 }
 .girlmantra{
+    padding-left: 1vw;
+    padding-bottom: 1.5vw;
     font-family: "Pacifico", cursive;
     font-family: 600;
-    font-size: calc(20px + 1vw);
+    font-size: calc(10px + 1vw);
 }
 .hero{
     display: flex;
