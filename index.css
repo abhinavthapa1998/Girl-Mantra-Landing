@@ -5,28 +5,55 @@
     padding: 0;
     
 }
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background: linear-gradient(to right, #fcf09f, #fce6fd);
+    border-radius: 0 0 20px 20px;
+    z-index: 3;
+}
+.emoji img{
+    height: 40px;
+    width: 40px;
+}
+.girlmantra{
+    font-family: classica-pro, sans-serif;
+    font-family: 600;
+    font-size: calc(20px + 1vw);
+}
 .hero{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.woman{
+#woman{
     position: relative;
-    top: 40px;
-    left: 3vw;
-    height: 300px;
-    width: 500px;
+    top: 10vh;
+    left: 10vw;
+    height: 30vh;
+    width: 35vw;
+    transition: 0.4s ease all;
     z-index: 1;
+
 }
+
 .hero-div{
+    position: relative;
     display: flex;
     height: 20vh;
     width: 25vw;
     padding: 60px 35px 60px 35px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(130deg, #fcf09fec, #fce6fdee);
+    background: linear-gradient(130deg, #fcf09ff6, #fce6fdf3);
     border-radius: 20px;
     z-index: 2;
     
@@ -38,7 +65,7 @@
     margin: 20px;
     font-family: "Poppins",sans-serif;
     font-weight: 800;
-    font-size: 45px;
+    font-size: 2.8vw;
 }
 
 .hero-heading-variant{
@@ -48,10 +75,12 @@
     -webkit-text-fill-color: transparent;
 }
 .card-grid{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 100px;
+    column-gap: 100px;
     padding: 68px 0 20px 0;
     
 }
@@ -71,7 +100,9 @@
     width: inherit;
     height: 347px;
 }
-
+#woman{
+    transition: 0.4s ease all;
+}
 .image{
     object-fit: cover;
     height: inherit;
@@ -158,37 +189,69 @@
 .card-container:hover{
     position: relative;
     transform: translateY(-5px);
+    box-shadow: 0px 1px 7px 0 #dddcdc59;
 }
 
 .card-container:hover .linehover{ width: 100%;}
 
-@media only screen and (max-width:991px) {
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .hero-div{
+        width: 70%;
+    }
+    .hero-heading, .hero-heading-variant{
+        font-size: calc(40px + 1vw);
+    }
     .card-grid{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 30px;
+        grid-template-rows: 1fr 1fr 1fr; 
     }
     .card-container{
-        height: 500px;
-        width: 40vw;
-        
-
+        height: 70vw;
+        width: 40vw;   
+    }
+    .detailHeader{
+        height: 155px;
+        padding: 20px 10px 0px 20px;
+    }
+    .challengeHead{
+        font-size: 4vw;
+    }
+    .challengeTime{
+        font-size: 2.5vw;
+    }
+    .entry, .kickOff{
+        font-size: 2vw;
+    }
+    .fee, .soon{
+        font-size: 2.5vw;
+    }
+    .detailFooter{
+        padding: 5px 10px 10px 5px;
     }
 
-    
-    .hero-heading .hero-heading-variant{
-        font-size: 32px;
-    }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
+    .hero-div{
+        height: 15vh;
+        width: 70%;
+    }
+    .hero-heading, .hero-heading-variant{
+        font-size: calc(25px + 1vw);
+    }
+    #woman{
+        width: calc(400px + 10vw);
+    }
     .card-grid{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        padding: 10px 0 10px 0;
+        row-gap: 40px;
     }
     .card-container{
-        width: 65vw;
-        height: 130vw;
+        width: 75vw;
+        height: 120vw;
+        max-height: 600px;
     }
     .imageContainer{
         height: 278px;
@@ -198,27 +261,27 @@
     }
     .detailHeader{
         height: 100px;
-        padding: 20px 0 0 20px;
+        padding: 20px 10px 0 20px;
 
     }
     .challengeHead{
-        font-size: 20px;
+        font-size: 4.5vw;
         
     }
     .challengeTime{
-        font-size: 12px;
+        font-size: 3.5vw;
     }
     .entry , .kickOff{
-        font-size: 10px;
+        font-size: 3.5vw;
 
     }
     .fee, .soon{
-        font-size: 10px;
+        font-size: 3.5vw;
     }
 
     .detailFooter{
-        height: 50px;
-        padding: 10px 0 0 20px;
+        height: 10vh;
+        padding: 10px 20px 0 20px;
     }
     
 }
