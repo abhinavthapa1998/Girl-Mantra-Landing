@@ -15,7 +15,7 @@
     width: 90vw;
     margin-left: 5vw;
     margin-right: 5vw;
-    background: linear-gradient(to right, #fcf09f, #fce6fd);
+    background: linear-gradient(to right, #fcf09fea, #fce6fdec);
     border-radius: 0 0 20px 20px;
     z-index: 3;
 }
@@ -42,6 +42,11 @@
     margin-left: 2vw;
     margin-right: 2vw;
     align-self: center;
+    transition: 0.3s ease all;
+}
+.menu-item:hover{
+    cursor: pointer;
+    color: white;
 }
 .hero{
     display: flex;
@@ -203,6 +208,7 @@
 }
 
 .card-container:hover{
+    cursor: pointer;
     position: relative;
     transform: translateY(-5px);
     box-shadow: 0px 1px 7px 0 #dddcdc59;
@@ -222,6 +228,7 @@
         grid-template-rows: 1fr 1fr 1fr; 
     }
     .card-container{
+        cursor: pointer;
         height: 70vw;
         width: 40vw;   
     }
@@ -265,6 +272,7 @@
         row-gap: 40px;
     }
     .card-container{
+        cursor: pointer;
         width: 75vw;
         height: 120vw;
         max-height: 600px;
